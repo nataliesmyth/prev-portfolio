@@ -3,6 +3,15 @@ body {
     padding: 0;
 }
 
+h2 {
+    padding: 3% 5%;
+}
+
+nav {
+    background-color: #454c51;
+    color: #f3f3f3;
+}
+
 .hero {
     position: relative;
     width: 100vw;
@@ -30,7 +39,7 @@ body {
     position: relative;
     text-align: center;
     font-family: "Monserrat", sans-serif;
-    color: white;
+    /* color: black; */
     text-align: center;
     margin: 0.625rem;
 }
@@ -84,9 +93,17 @@ body {
 .container {
     max-width: 980px;
     padding: 3% 5%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     font-size: 1.3em;
     line-height: 1.6;;
+}
+
+.dark-container {
+    padding: 12% 31%;
+    text-align: center;
+    background-color: #454c51;
+    color: #f3f3f3;
+    line-height: 1.5;
 }
 
 /***** PROJECT GALLERY *****/
@@ -97,6 +114,15 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+/***** CONTACT *****/
+
+#contact {
+    width: 100vw;
+    line-height: 2.5;
+    /* color: #f3f3f3; */
+}
+
 
 /***** FOOTER *****/
 
