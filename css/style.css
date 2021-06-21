@@ -12,6 +12,12 @@ nav {
     color: #f3f3f3;
 }
 
+/***** BOOTSTRAP CLASSES *****/
+
+.mb-1 {
+    margin-bottom: 6.25rem!important;
+}
+
 .hero {
     position: relative;
     width: 100vw;
@@ -113,6 +119,19 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.project-gallery img {
+    max-width: 250px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    transition: opacity 0.2 linear, transform 0.2s ease-in-out;
+}
+
+.project-gallery img:hover {
+    opacity: 1;
+    transform:scale(1.15);
+    cursor: pointer;
 }
 
 /***** CONTACT *****/
