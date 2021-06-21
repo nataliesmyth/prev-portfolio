@@ -18,6 +18,11 @@ nav {
     margin-bottom: 6.25rem!important;
 }
 
+.p-1 {
+    padding: 12.25rem!important;
+    /* padding-right: 12.25rem!important; */
+}
+
 .hero {
     position: relative;
     width: 100vw;
