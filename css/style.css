@@ -22,6 +22,96 @@ nav {
     padding: 12.25rem!important;
 }
 
+
+
+
+
+
+
+
+
+/***** SCROLLING TEXT *****/
+#two {
+    background: #ff8e71;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #ebd8d0;
+  }
+  
+  .box {
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  .box::before {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    content: '';
+    height: 10px;
+    position: absolute;
+    background: linear-gradient(180deg, #ff8e71, rgba(255, 142, 113, 0));
+  }
+  .box::after {
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    content: '';
+    height: 10px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(255, 142, 113, 0), #ff8e71);
+  }
+  
+  p {
+    float: left;
+    margin-bottom: 0%;
+  }
+  
+  .scrolling-text-items {
+    float: right;
+    text-align: left;
+    margin: 0;
+    padding-top: 0;
+    -webkit-animation: scrollUp 12s ease-in-out infinite normal;
+            animation: scrollUp 12s ease-in-out infinite normal;
+  }
+  
+  .scrolling-text-items li {
+    opacity: 1;
+    height: 20px;
+    padding-top: 30px;
+    list-style: none;
+    line-height: 2em;
+  }
+  
+  @-webkit-keyframes scrollUp {
+    from {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      -webkit-transform: translateY(-80%);
+              transform: translateY(-80%);
+    }
+  }
+  
+  @keyframes scrollUp {
+    from {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      -webkit-transform: translateY(-80%);
+              transform: translateY(-80%);
+    }
+  }
+
+
 .hero {
     position: relative;
     width: 100vw;
@@ -57,7 +147,8 @@ nav {
 .hero-title {
     font-size: 3rem;
     font-weight: 600;
-    margin-bottom: 0;
+    margin-bottom: 1em;
+    text-align: left;
 }
 
 .hero-subtitle {
