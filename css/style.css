@@ -32,13 +32,13 @@ nav {
 
 /***** SCROLLING TEXT *****/
 #two {
-    background: #ff8e71;
+    /* background: #ff8e71; */
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    color: #ebd8d0;
+    /* color: #ebd8d0; */
   }
   
   .box {
@@ -54,7 +54,7 @@ nav {
     content: '';
     height: 10px;
     position: absolute;
-    background: linear-gradient(180deg, #ff8e71, rgba(255, 142, 113, 0));
+    background: linear-gradient(180deg, #fff, rgba(255, 142, 113, 0));
   }
   .box::after {
     left: 0;
@@ -64,7 +64,7 @@ nav {
     content: '';
     height: 10px;
     position: absolute;
-    background: linear-gradient(180deg, rgba(255, 142, 113, 0), #ff8e71);
+    background: linear-gradient(180deg, rgba(255, 142, 113, 0), #fff);
   }
   
   p {
@@ -83,8 +83,8 @@ nav {
   
   .scrolling-text-items li {
     opacity: 1;
-    height: 20px;
-    padding-top: 30px;
+    /* height: 20px; */
+    /* padding-top: 30px; */
     list-style: none;
     line-height: 2em;
   }
