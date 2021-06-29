@@ -68,7 +68,7 @@ nav {
   }
   
   p {
-    float: left;
+    /* float: left; */
     margin-bottom: 0%;
   }
   
@@ -245,3 +245,24 @@ footer {
     padding: 2% 5%;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
