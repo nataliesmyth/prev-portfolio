@@ -1,6 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url(./../images/click-game-screenshot.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h2 {
@@ -37,41 +40,7 @@ nav {
 
 
 /***** SCROLLING TEXT *****/
-#two {
-    /* background: #ff8e71; */
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    /* color: #ebd8d0; */
-  }
-  
-  .box {
-    height: 40px;
-    overflow: hidden;
-    position: relative;
-  }
-  .box::before {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    content: '';
-    height: 10px;
-    position: absolute;
-    background: linear-gradient(180deg, #fff, rgba(255, 142, 113, 0));
-  }
-  .box::after {
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-    width: 100%;
-    content: '';
-    height: 10px;
-    position: absolute;
-    background: linear-gradient(180deg, rgba(255, 142, 113, 0), #fff);
-  }
+
   
   p {
     /* float: left; */
@@ -127,6 +96,10 @@ nav {
     align-items: center;
 }
 
+.cartoon-me img {
+    width: 30%;
+}
+
 .hero::before {
     content: "";
     position: absolute;
@@ -142,7 +115,9 @@ nav {
 }
 
 .hero-content {
+    display: flex;
     position: relative;
+    left: 25rem;
     text-align: left;
     font-family: "Monserrat", sans-serif;
     /* color: black; */
@@ -175,6 +150,7 @@ nav {
     font-size: 1.125rem;
     font-weight: 200;
     cursor: pointer;
+    position: absolute;
 }
 
 .hero-button:hover {

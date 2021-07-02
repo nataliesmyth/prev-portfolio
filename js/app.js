@@ -4,7 +4,7 @@ let readout = document.querySelector('.readout');
 
 let count = 0
 
-let text = ["Software Engineer", "Web Developer", "Handstand Efficianato", "Full Stack Web Developer"];
+let text = ["Software Engineer", "Programmer", "Handstand Efficianato", "Full Stack Web Developer", "George R.R. Martin fan girl", "CSS enthusiast" ];
 setInterval(e => {
   let randomNumber = Math.floor(Math.random()*11);
   count = (count + randomNumber) % text.length;
