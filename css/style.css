@@ -26,7 +26,13 @@ nav {
 
 
 
-
+.readout {
+    color: #ddd;
+    font-size: 2em;
+    font-family: sans-serif;
+    margin-top: 1em;
+    text-align: left;
+  }
 
 
 
@@ -137,11 +143,13 @@ nav {
 
 .hero-content {
     position: relative;
-    text-align: center;
+    text-align: left;
     font-family: "Monserrat", sans-serif;
     /* color: black; */
     text-align: center;
     margin: 0.625rem;
+    min-width: 400px;
+    min-height: 350px;
 }
 
 .hero-title {
