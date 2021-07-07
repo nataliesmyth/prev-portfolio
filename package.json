@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "bootstrap-icons": "^1.5.0"
+    "bootstrap-icons": "^1.5.0",
+    "grunt": "^1.4.1",
+    "materialize-css": "^1.0.0"
   }
 }
