@@ -12,8 +12,7 @@ console.log('sanity check')
 //   readout.innerHTML = `<b>${newText}</b>`
 // }, 2000);
 
-
-$(document).ready(function(){
+$(function() {
     function e(){
         Highcharts.chart("container",{
             chart:{

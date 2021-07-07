@@ -1,0 +1,44 @@
+nav {
+	background-color: @primaryColor;
+
+	.brand-logo {
+		vertical-align: middle;
+	    line-height: 2;
+		img {
+			max-height: 45px;
+			vertical-align: middle;
+			margin-top: -7px;
+			margin-left: 10px;
+		}
+
+		&:focus {
+		outline: 0;
+		}
+	}
+
+	& ul {
+		& a {
+			transition: 0.5s all;
+
+			&:after {
+				content: '';
+				background-color: @accentColor;
+				height: 0px;
+				display: block;
+				bottom: 0px;
+				width: ~'calc(100% + 30px)';
+				margin-left: -15px;
+				
+				transition: 0.5s all;
+				}
+			&.active {
+				color: @accentColor;
+
+				&:after {
+				    height: 5px;
+				    transform: translateY(-5px);
+				}
+			}
+		}
+	}
+}
