@@ -92,9 +92,11 @@ nav {
     position: relative;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    left: 20em;
+    top: 5em;
 }
 
 .cartoon-me img {
@@ -176,21 +178,8 @@ nav {
 
 /***** LAYOUT *****/
 
-.container {
-    max-width: 980px;
-    padding: 3% 5%;
-    /* margin: 0 auto; */
-    font-size: 1.3em;
-    line-height: 1.6;;
-}
 
-.dark-container {
-    padding: 12% 31%;
-    text-align: center;
-    background-color: #454c51;
-    color: #f3f3f3;
-    line-height: 1.5;
-}
+
 
 /***** PROJECT GALLERY *****/
 
