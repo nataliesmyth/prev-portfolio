@@ -1,11 +1,28 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(./../images/cartoon-icon);
+    /* background-image: url(./../images/portfolio-woman.png); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+main {
+    padding-top: 10em;
+    background-image: url(./../images/portfolio-woman.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar {
+      background-color: #f03c3c;
+      /* color: #454c51; */
+
+      /* position: relative;  */
+    }
 
 li a {
     color: #CF1332;
@@ -13,16 +30,17 @@ li a {
 
 h2 {
     padding: 3% 5%;
+    text-align: center;
 }
 
 nav {
-    background-color: #454c51;
+    /* background-color: #454c51; */
     font-size: 14px;
     font-family: Bitter-Italic, Times, serif;
     font-style: normal;
     font-weight: normal;
     letter-spacing: 1px;
-    line-height: 28px;
+    /* line-height: 28px; */
     text-transform: uppercase;
 }
 
@@ -41,11 +59,10 @@ nav {
 
 
 .readout {
-    color: #ddd;
+    /* color: #ddd; */
     font-size: 2em;
-    font-family: sans-serif;
     margin-top: 1em;
-    text-align: left;
+    /* text-align: left; */
   }
 
 
@@ -109,7 +126,7 @@ nav {
 .hero {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 67vh;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
@@ -140,8 +157,8 @@ nav {
     position: relative;
     left: 25rem;
     text-align: left;
-    font-family: "Monserrat", sans-serif;
-    /* color: black; */
+    /* font-family: "Monserrat", sans-serif; */
+    color: black;
     text-align: center;
     margin: 0.625rem;
     min-width: 400px;
@@ -154,6 +171,7 @@ nav {
     margin-bottom: 1em;
     text-align: left;
 }
+
 
 .hero-subtitle {
     font-size: 2rem;
@@ -193,9 +211,11 @@ nav {
 .nav-item {
     font-size: 1.3em;
     padding: 20px;
-    color: #f3f3f3;
 }
 
+.nav-item a{
+    color: #454c51;
+}
 /***** LAYOUT *****/
 
 
@@ -236,7 +256,7 @@ nav {
 
 footer {
     width: 100vw;
-    padding: 2% 5%;
+    /* padding: 2% 5%; */
     text-align: center;
 }
 
