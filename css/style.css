@@ -8,7 +8,7 @@ body {
 }
 
 main {
-    padding-top: 10em;
+    position: relative;
     background-image: url(./../images/portfolio-woman.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -16,13 +16,6 @@ main {
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
 }
-
-.navbar {
-      background-color: #f03c3c;
-      /* color: #454c51; */
-
-      /* position: relative;  */
-    }
 
 li a {
     color: #CF1332;
@@ -35,13 +28,14 @@ h2 {
 
 nav {
     /* background-color: #454c51; */
-    font-size: 14px;
-    font-family: Bitter-Italic, Times, serif;
+    /* font-size: 14px; */
+    /* font-family: Bitter-Italic, Times, serif; */
     font-style: normal;
     font-weight: normal;
     letter-spacing: 1px;
     /* line-height: 28px; */
     text-transform: uppercase;
+    /* text-align: right; */
 }
 
 /***** BOOTSTRAP CLASSES *****/
@@ -145,10 +139,6 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(./../images/njlc.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     filter: brightness(60%);
 }
 
