@@ -9,7 +9,8 @@ main {
     background-image: url(./../images/portfolio-woman.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 50vw;
+    top: 94px;
+
 }
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -33,6 +34,10 @@ nav {
     /* text-align: right; */
 }
 
+#home {
+    height: 80vh;
+}
+
 /***** BOOTSTRAP CLASSES *****/
 
 .mb-1 {
@@ -54,10 +59,13 @@ nav {
     font-size: 2em;
     margin-top: 1em;
     position: relative;
-    left: 20em;
-    /* text-align: left; */
+    top: 2em;
+    text-align: center;
   }
 
+.readout b {
+    text-align: left;
+}
 
 
 /***** SCROLLING TEXT *****/
@@ -85,14 +93,14 @@ nav {
     /* justify-content: center; */
     /* align-items: center; */
     /* left: 20em; */
-    top: 5em;
+    top: 11em;
 }
 
 /* .cartoon-me img {
     width: 30%;
 } */
 
-.hero::before {
+/* .hero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -100,15 +108,15 @@ nav {
     width: 50%;
     height: 100%;
     filter: brightness(60%);
-}
+} */
 
-.hero-content {
+/* .hero-content {
     display: flex;
     position: relative;
     color: black;
     text-align: center;
     min-height: 350px;
-}
+} */
 
 .hero-title {
     font-size: 3rem;
@@ -116,13 +124,13 @@ nav {
     margin-bottom: 1em;
     text-align: center;
     position: relative;
-    left: 10.75em;
+    top: 2em;
 }
 
 .hero-text {
     position: relative;
     text-align: left;
-    left: 30em;
+    /* left: 30em; */
 }
 
 .hero-subtitle {
@@ -152,20 +160,15 @@ nav {
 /***** NAV *****/
 
 .nav-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    color: #CF1332;
-
+    justify-content: flex-end;
 }
 
 .nav-item {
     font-size: 1.3em;
-    padding: 20px;
+    padding: 0 20px 0 20px;
 }
 
-.nav-item a{
+.nav-item a {
     color: #454c51;
 }
 /***** LAYOUT *****/
