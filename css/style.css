@@ -56,9 +56,9 @@ nav {
 
 .readout {
     /* color: #ddd; */
-    font-size: 2em;
+    /* font-size: 2em; */
     margin-top: 1em;
-    position: relative;
+    /* position: relative; */
     top: 2em;
     text-align: center;
   }
@@ -67,7 +67,9 @@ nav {
     text-align: left;
 }
 
-
+#home p {
+    margin-left: 24.5em;
+}
 /***** SCROLLING TEXT *****/
 
   
@@ -123,12 +125,12 @@ nav {
     font-weight: 600;
     margin-bottom: 1em;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     top: 2em;
 }
 
 .hero-text {
-    position: relative;
+    /* position: relative; */
     text-align: left;
     /* left: 30em; */
 }
