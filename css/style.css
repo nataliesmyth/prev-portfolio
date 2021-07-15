@@ -12,6 +12,7 @@ main {
     top: 94px;
 
 }
+
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -20,24 +21,20 @@ li a {
     color: #CF1332;
 }
 
-h2 {
-    padding: 3% 5%;
-    text-align: center;
-}
-
 nav {
     font-style: normal;
     font-weight: normal;
     letter-spacing: 1px;
-    /* line-height: 28px; */
     text-transform: uppercase;
-    /* text-align: right; */
 }
 
 #home {
     height: 80vh;
 }
 
+.text {
+    width: 10em;
+}
 /***** BOOTSTRAP CLASSES *****/
 
 .mb-1 {
