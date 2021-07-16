@@ -9,6 +9,7 @@ main {
     background-image: url(./../images/portfolio-woman.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: contain;
     top: 94px;
 
 }
