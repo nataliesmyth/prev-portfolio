@@ -4,15 +4,14 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-main {
+/* main {
     position: relative;
     background-image: url(./../images/portfolio-woman.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
-    top: 94px;
-
-}
+    background-size: 50% 50% contain;
+    top: 94px; 
+} */
 
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -35,6 +34,10 @@ nav {
 
 .text {
     width: 10em;
+}
+
+.fixed-img {
+    position: fixed;
 }
 /***** BOOTSTRAP CLASSES *****/
 
