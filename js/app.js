@@ -11,3 +11,5 @@ setInterval(e => {
   var newText = text[count];
   readout.innerHTML = `<b>${newText}</b>`
 }, 2000);
+
+

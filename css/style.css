@@ -4,14 +4,14 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-main {
+/* main {
     position: relative;
     background-image: url(./../images/portfolio-woman.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     top: 94px;
 
-}
+} */
 
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -35,6 +35,28 @@ nav {
 .text {
     width: 10em;
 }
+
+.logo-fixed img {
+    bottom: -40%;
+    display: block;
+    height: 45%;
+    margin: auto;
+    transition: 1s all;
+    cursor: -webkit-grab;
+}
+
+.logo-fixed h2 {
+    width: 90%;
+    position: absolute;
+    bottom: 55%;
+    right: 5%;
+    font-size: 45px;
+    text-align: center;
+    padding: 10% 5%;
+    z-index: 999;
+}
+
+
 /***** BOOTSTRAP CLASSES *****/
 
 .mb-1 {
