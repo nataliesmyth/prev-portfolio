@@ -135,6 +135,15 @@ nav {
     border: 1px solid #454c51;
 }
 
+#about {
+    position: relative;
+    z-index: 2;
+}
+
+.cartoon-me {
+    position: relative;
+    z-index: 1;
+}
 /***** NAV *****/
 
 .nav-list {
