@@ -54,6 +54,9 @@ nav {
     padding-left: 12.25rem!
   }
 
+.text-block {
+    z-index: 2;
+}
 
 .readout {
     /* color: #ddd; */
@@ -72,6 +75,7 @@ nav {
     margin-left: 24.5em;
     font-size: 1rem;
 }
+
 /***** SCROLLING TEXT *****/
 
   
@@ -135,7 +139,7 @@ nav {
     border: 1px solid #454c51;
 }
 
-#about {
+#about, #projects, #contact {
     position: relative;
     z-index: 2;
 }
