@@ -13,6 +13,7 @@ body {
     top: 94px; 
 } */
 
+
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -180,23 +181,16 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-width: 992px) {
+    /* .cartoon-me {
+      display: none;
+    } */
 
+    .img-fluid{
+        position: relative;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .p-1 {
+        padding: 0rem;
+    }
+  }
