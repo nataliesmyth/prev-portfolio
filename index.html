@@ -4,197 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.scss">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
     <script defer src="./js/app.js"></script>
-    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Document</title>
 </head>
-
 <body>
+
     <header>
-        <nav class="navbar-nav fixed-top navbar-light" style="background-color: #e3f2fd;">
-            <ul class="nav nav-list navbar">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">
-                        About
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">
-                        Projects
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Natalie Smyth</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
 
-    <main>
-
-        <!-- HERO -->
-        <div id="home" class="container">
-        <div class="row">
-          <div class="col-5 cartoon-me">
-            <img src="./images/portfolio-woman.png" class="img-fluid fixed-img" alt="Responsive image">
-          </div>
-          <div class="col text-block mt-5 pt-5">
-            <!-- <div class="card g-0 mt-3 mx-auto" style="width: 21rem;">
-                <div class="card-body m-1"> -->
-                    <h1 class="card-title m-2 p-2">
-                        Welcome!
-                    </h1>
-
-                    <h2 class="card-subtitle m-2 p-2">
-                        My name is Natalie.
-                    </h2>
-
-                    <h6 class="card-text m-2 p-2">
-                        I'm a <span class="readout"></span>
-                    </h6>
-                </div>
-          </div>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                      <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li> -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
+    </nav>
+</header>
+
+<main>
+    
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./images/portfolio-woman.png" class="d-block mx-lg-auto img-fluid" alt="cartoon-me">
+            </div>
+            
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Hello! I'm Natalie.</h1>
+                <p class="lead">I'm a software engineer.</p>
+                
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    
+                  <a href="https://docs.google.com/document/d/e/2PACX-1vSfgedfrgRoeg-5dkhAx8NdS8Vo5cSSt6vtBLdWSOyLp3zpuoCIpNUEEKE33KXbaI31McBTpfCCDLTL/pub" class="btn btn-primary btn-lg px-4 me-md-2" target="_blank">Resume</a>
+                  <a href="#about" class="btn btn-outline-secondary btn-lg px-4">Learn More</a>
+                    <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Resume</button> -->
+                    <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Learn more</button> -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div class="b-exampledivider"></div> -->
+    <div class="container px-4 py-5 mt-4" id="about">
+        <h2 class="pb-2 text-center border-bottom">About</h2>
+        <p class="mx-4"  style="">I am an open and energetic web developer who enjoys working collaboratively. My goal is to build programs that make a positive difference people’s lives, and I always strive to find elegant and creative solutions to the task at hand.</p>
     </div>
 
 
+    
+    <!-- <div class="b-example-divider "></div> -->
 
-
-
-        <div id="about" class="container text-right p-1">
-            
-            <div class="row">
-                <div class="col-5">
-                    
-                    <h2>About</h2>
+    <div class="container  px-4 py-5 text-center" id="projects">
+        <h2 class="pb-2 border-bottom">Projects</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+              <img class="img-fluid img-thumbnail" src="./images/click-game.png" alt="">
+              <div class="feature-icon bg-primary bg-gradient">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+                </div>
+                <h2>Click a Square</h2>
+                <!-- <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> -->
+                <a href="#" class="icon-link">
+                    view in browser
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+                </a>
             </div>
-            <div class="col px-5">
-
-                <p class="">I am an open and energetic web developer who enjoys working collaboratively. My goal is to build programs that make a positive difference people’s lives, and I always strive to find elegant and creative solutions to the task at hand.</p>
-                <a href="https://docs.google.com/document/d/e/2PACX-1vSfgedfrgRoeg-5dkhAx8NdS8Vo5cSSt6vtBLdWSOyLp3zpuoCIpNUEEKE33KXbaI31McBTpfCCDLTL/pub" target="_blank">Resume</a>
+            <div class="feature col">
+              <img class="img-fluid img-thumbnail" src="./images/dog-collector-app.png" alt="">
+              <div class="feature-icon bg-primary bg-gradient">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+                </div>
+                <h2>Dog Collector App</h2>
+                <!-- <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> -->
+                <a href="#" class="icon-link">
+                    view in browser
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+                <a href="#" class="icon-link">
+                    GitHub
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+                </a>
             </div>
+            <div class="feature col">
+              <img class="img-fluid img-thumbnail" src="./images/tamagotchi.png" alt="">
+              <div class="feature-icon bg-primary bg-gradient">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+                </div>
+                <h2>Dog Collector App</h2>
+                <!-- <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> -->
+                <a href="#" class="icon-link">
+                    view in browser
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+                <a href="#" class="icon-link">
+                    GitHub
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+                </a>
             </div>
+            <div class="feature col">
+              <img class="img-fluid img-thumbnail" src="./images/react-todo.png" alt="">
+            <div class="feature-icon bg-primary bg-gradient">
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+            </div>
+            <h2>To Do App</h2>
+            <!-- <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> -->
+            <a href="#" class="icon-link">
+              view in browser
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
         </div>
+      </div>
 
 
 
 
+    <!-- <div class="b-example-divider"></div> -->
+    <div class="container text-center" id="contact">
+        <h2 class="pb-2 border-bottom">Contact</h2>
 
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+            </svg>
+          Nataliesmyth11@gmail.com
+      </p>
 
+      <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+        973.699.3254
+      </p>
+      <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            <a href="www.github.com/nataliesmyth" target="_blank">GitHub</a>
+      </p>
+      <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg>
+            <a href="https://www.linkedin.com/in/nataliesmyth11/" target="_blank">LinkedIn</a>
+      </p>
 
+    </div>
+    
+</main>
 
-        <!-- BOOTSTRAP PROJECT GALLERY -->
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+      <span class="text-muted">&copy; Natalie Smyth 2021</span>
+    </div>
+  </footer>
 
-
-        <div id="projects" class="container projects p-1">
-                <h2 class="text-center mb-4">Projects</h2>
-
-            <div class="card mx-auto mb-5" style="width: 18rem;">
-                <img src="./images/click-game.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Click Game</h5>
-                  <p class="card-text"></p>
-                  <a href="https://nataliesmyth.github.io/fuzzy-octo-memory/" target="_blank" class="btn btn-primary">View in Browser</a>
-                  <a href="https://github.com/nataliesmyth/fuzzy-octo-memory" target="_blank" class="btn btn-primary">Github</a>
-                </div>
-            </div>
-
-            <div class="card mx-auto mb-5" style="width: 18rem;">
-                <img src="./images/dog-collector-app.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Dog Collector</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="https://dogcollectorapp.herokuapp.com/" target="_blank" class="btn btn-primary">View in Browser</a>
-                  <a href="https://github.com/nataliesmyth/dog-collector" target="_blank" class="btn btn-primary">Github</a>
-                </div>
-            </div>
-
-            <div class="card mx-auto mb-5" style="width: 18rem;">
-                <img src="./images/react-todo.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">To Do App</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="https://ns-react-todo.herokuapp.com/todos" target="_blank" class="btn btn-primary">View in Browser</a>
-                  <a href="https://nataliesmyth.github.io/ns-react-todo" class="btn btn-primary">GitHub</a>
-                </div>
-            </div>
-            <div class="card mx-auto mb-5" style="width: 18rem;">
-                <img src="./images/tamagotchi.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Tamagotchi</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="" target="_blank" class="btn btn-primary">View in Browser</a>
-                  <a href="" target="_blank" class="btn btn-primary">View in Browser</a>
-                </div>
-            </div>
-
-                <!-- <div class="row">
-                    <div class="col">
-                        1 of 1
-                        <a href="https://github.com/nataliesmyth/fuzzy-octo-memory" class="btn btn-dark">
-                            <a href="https://dogcollectorapp.herokuapp.com/" class="btn btn-primary mb-2">View in browser</a>
-                            <a href="https://github.com/nataliesmyth/dog-collector" class="btn btn-dark">
-                    </div>
-                </div> -->
-
-
-                
- 
-
-
-
-
-        <!-- CONTACT -->
-        <div id="contact" class="container p-1">
-            <h2>Contact</h2>
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-                  </svg>
-                Nataliesmyth11@gmail.com
-            </p>
-
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                  </svg>
-              973.699.3254
-            </p>
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                  </svg>
-                  <a href="www.github.com/nataliesmyth" target="_blank">GitHub</a>
-            </p>
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                  </svg>
-                  <a href="https://www.linkedin.com/in/nataliesmyth11/" target="_blank">LinkedIn</a>
-            </p>
-
-        </div>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2021 Natalie Smyth</p>
-    </footer>
-    <!-- Separate Popper and Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </body>
 </html>
