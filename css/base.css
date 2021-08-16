@@ -12,6 +12,10 @@ p {
   .container {
     height: 100vh;
   }
+
+.py-5 {
+  padding-top: 10rem!important;
+}
   
   @media (min-width: 992px) {
     .rounded-lg-3 { border-radius: .3rem; }
