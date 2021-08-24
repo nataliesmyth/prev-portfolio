@@ -31,6 +31,18 @@ nav {
     font-weight: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
+    /* background-color: #e3f2fd; */
+}
+
+
+
+nav::after {
+    content: "";
+    width: 583px;
+    height: 646px;
+    background-image: url(../images/natalie-smyth-cartoon.png);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 #home {
@@ -186,9 +198,9 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-    /* .cartoon-me {
-      display: none;
-    } */
+    nav::after {
+        display: none;
+    }
 
     .img-fluid{
         position: relative;
