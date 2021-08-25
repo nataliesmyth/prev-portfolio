@@ -11,11 +11,11 @@
 
 // Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
 .cartoon-me {
-  display: fixed;
+  display: none;
 }
 @include media-breakpoint-down(md) {
   .cartoon-me {
-    display: none;
+    display: block
   }
 }
 
