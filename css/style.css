@@ -27,10 +27,11 @@ li a {
 }
 
 nav {
+    z-index: 2;
     font-style: normal;
     font-weight: normal;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     /* background-color: #e3f2fd; */
 }
 
@@ -43,9 +44,17 @@ nav::after {
     background-image: url(../images/natalie-smyth-cartoon.png);
     background-repeat: no-repeat;
     background-size: auto;
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+
+#home, #about, #contact {
+    z-index: 0;
 }
 
 #home {
+    margin-top: 400px;
     height: 80vh;
 }
 
