@@ -21,51 +21,48 @@
 
     <header>
 
-      
-        <nav class="navbar navbar-expand-md fixed-top navbar-collapse" style="background-color: #e3f2fd;" role="navigation">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Natalie Smyth</a>
-                <button class="navbar-toggle collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="sr-only">Toggle navigation</span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-                  </button>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Natalie Smyth</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#">Home</a>
+              </li>
 
-                  <div class="collapse navbar-collapse menu site-navbar" id="navbarCollapse">
-                    <ul class="nav navbar-nav" style="min-width: 100vw;">
-                      <li class="nav-item">
-                        <a class="nav-link link-dark" href="#">Home</a>
-                      </li>
-                      
-                      <li class="nav-item">
-                        <a class="nav-link link-dark" href="#about" data-talking="About">About</a>
-                      </li>
-                      
-                      <li class="nav-item">
-                        <a class="nav-link link-dark" href="#workflow" data-talking="Here's how I do it">Workflow</a>
-                      </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#about" data-talking="About">About</a>
+              </li>
 
-                      <li class="nav-item">
-                        <a class="nav-link link-dark" href="#projects">Projects</a>
-                      </li>
-                      
-                      <li class="nav-item">
-                        <a class="nav-link link-dark" href="#contact">Contact</a>
-                    </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#workflow" data-talking="Here's how I do it">Workflow</a>
+              </li>
 
-                      
-                      <!-- <li class="nav-item">
-                        <a class="nav-link link-dark" href="#YES">YES!</a>
-                      </li> -->
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#projects">Projects</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#contact">Contact</a>
+              </li>
 
-                    
+              
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
+              </li>
 
-            </div>
-        </div>
-    </nav>
+              
+            </ul>
+            
+      </nav>
+      
 </header>
 
 <main>
@@ -387,6 +384,9 @@
       <span class="text-muted">&copy; Natalie Smyth 2021</span>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 
 </body>
 </html>
