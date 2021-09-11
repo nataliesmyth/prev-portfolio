@@ -46,7 +46,7 @@ nav::after {
     background-size: auto;
     position: relative;
     top: 200px;
-    left: 100px;
+    left: 1000px;
 }
 
 #home, #about, #contact {
