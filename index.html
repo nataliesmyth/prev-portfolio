@@ -1,431 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natalie Smyth | Software Engineer</title>
-    <link rel="stylesheet" href="./css/base.css">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natalie Smyth | Software Engineer</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Open+Sans&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <!-- ************** NAV BAR ************** -->
+  <header>
+
+    <nav>
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+            role="tab" aria-controls="home" aria-selected="true">Home</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab"
+            aria-controls="about" aria-selected="false">About</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button"
+            role="tab" aria-controls="messages" aria-selected="false">Workflow</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button"
+            role="tab" aria-controls="projects" aria-selected="false">Projects</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+            role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+
+
+    <!-- ************** TAB CONTENT ************** -->
     
-  </head>
-  <body>
     
-    <header>
-
-      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Natalie Smyth</a>
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
-              
-              <li class="nav-item">
-                <a class="nav-link link-dark" href="#">Home</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link link-dark" href="#about" data-talking="About">About</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link link-dark" href="#workflow" data-talking="Here's how I do it">Workflow</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link link-dark" href="#projects">Projects</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link link-dark" href="#contact">Contact</a>
-              </li>
-              
-              </ul>
-              </div>
-              
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-
-              
-            </ul>
-            
-      </nav>
+    
+    <div class="tab-content">
       
-</header>
+      <!-- ************** HOME ************** -->
       
-      <main>
-
-        
-      
-        
+      <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div class="container vh-100 col-xxl-8 px-4 py-5">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-              <img src="./images/portfolio-woman.png" class="d-block mx-lg-auto img-fluid img-fixed icon" alt="cartoon-me">
+              <img src="./images/portfolio-woman.png" class="d-block mx-lg-auto img-fluid img-fixed icon"
+                alt="cartoon-me">
             </div>
-            
+
             <div class="col-lg-6">
               <h1 class="display-5 fw-bold lh-1 mb-3">Hey, Hi, Hello!</h1>
               <h2>I'm Natalie.</h2>
               <p>I am a <span class="readout"></span></p>
-              
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                
-                
-              </div>
             </div>
+
           </div>
         </div>
-        
-        
+      </div>
+
+
+      <!-- ************** ABOUT ************** -->
+
+
+      <div class="tab-pane" id="about" role="tabpanel" aria-labelledby="about-tab">
+
         <div class="container vh-100 col-xxl-8 px-4 py-5" id="about">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-              <!-- <img src="./images/portfolio-woman.png" class="d-block mx-lg-auto img-fluid" alt="cartoon-me"> -->
+              <img src="./images/portfolio-woman.png" class="d-block mx-lg-auto img-fluid img-fixed icon"
+                alt="cartoon-me">
             </div>
-            
-            <div class="col-lg-6" >
+
+            <div class="col-lg-6">
               <!-- <h1 class="display-5 fw-bold lh-1 mb-3">About Me</h1> -->
               <h2 class="py-4">About Me</h2>
-              <p class="lead">I am an open and energetic web developer who enjoys working collaboratively. My goal is to build programs that make a positive difference people’s lives, and I always strive to find elegant and creative solutions to the task at hand.</p>
-              
-              <a href="https://docs.google.com/document/d/e/2PACX-1vSfgedfrgRoeg-5dkhAx8NdS8Vo5cSSt6vtBLdWSOyLp3zpuoCIpNUEEKE33KXbaI31McBTpfCCDLTL/pub" target="_blank">Resume</a>
-              
-              
+              <p>I am an open and energetic web developer who enjoys working collaboratively. My goal is to build
+                programs
+                that make a positive difference people’s lives, and I always strive to find elegant and creative
+                solutions
+                to the task at hand.</p>
+
+              <a href="https://docs.google.com/document/d/e/2PACX-1vSfgedfrgRoeg-5dkhAx8NdS8Vo5cSSt6vtBLdWSOyLp3zpuoCIpNUEEKE33KXbaI31McBTpfCCDLTL/pub"
+                target="_blank">Resume</a>
+
+
               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                
-                
+
+
               </div>
             </div>
           </div>
         </div>
-        
-        
-        
-        
-        
-        
+
+      </div>
+
+
+
+      <!-- ************** WORKFLOW ************** -->
+
+
+
+      <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
         <div class="container  col-xxl-8 px-4 py-5" id="workflow">
           <div class="row flex-lg-row-reverse g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
               <div class="expanded row all-steps">
                 <div class="col-xs-12 steps" id="step-one">
-                  
+
                 </div>
                 <div class="col-xs-12 steps" id="step-two">
-                  
+
                 </div>
               </div>
               <div class="expanded row all-steps">
                 <div class="col-xs-12 steps" id="step-four">
-                  
+
                 </div>
                 <div class="col-xs-12 steps" id="step-three">
-                  
+
                 </div>
               </div>
             </div>
-            
+
             <div class="col-lg-6">
               <h2 class="py-4">My Workflow</h2>
-              <p class="lead">I've adopted a work flow that prioritizes planning and communication. I take big ideas and implement them in small, manageable steps.</p>
-              
+              <p class="lead">I've adopted a work flow that prioritizes planning and communication. I take big ideas and
+                implement them in small, manageable steps.</p>
+
               <div class="row">
                 <div class="col">
                   <h5>Planning:</h5>
                   <ul>
                     <li>User Stories
-                      <li>Trello</li>
-                      <li>Wire frames</li>
-                      <li>Entity Relationship Diagram (ERD)</li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h5>Implementation:</h5>
-                    <ul>
-                      <li>Reliable frameworks including</li>
-                      <li>Rails</li>
-                      <li>Node</li>
-                      <li>Express</li>
-                      <li>Django</li>
-                    </ul>            </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <h5>Collaboration:</h5>
-                      <ul>
-                        <li>Git</li>
-                        <li>Github</li>
-                      </ul>
-                    </div>
-                    <div class="col">
-                      <h5>Interactivity:</h5>
-                      <ul>
-                        <li>Ruby</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>Python</li>
-                      </ul>
-                    </div>
-                  </div>
-                  
+                    <li>Trello</li>
+                    <li>Wire frames</li>
+                    <li>Entity Relationship Diagram (ERD)</li>
+                  </ul>
                 </div>
-                
-                
-              </div>
-              
-              
-              
-            </div>
-            
-            
-            
-            
-            
-            <div class="container col-xxl-8 px-4 py-5" id="projects">
-              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                  <!-- <img src="./images/portfolio-woman.png" class="d-block mx-lg-auto img-fluid" alt="cartoon-me"> 
-                    
-                  -->
-                </div>
-                
-                <div class="col-lg-6" >
-                  <!-- <h1 class="display-5 fw-bold lh-1 mb-3">About Me</h1> -->
-                  <h2>Projects</h2>
-                  <div class="feature col">
-                    <img class="img-fluid img-thumbnail" src="./images/dog-collector-photo.png" alt="">
-                    <div class="feature-icon bg-primary bg-gradient">
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
-                    </div>
-                    <h4>Dog Collector App</h4>
-                    <p>Full-stack reference application built with Django.</p>
-                    <a href="https://dogcollectorapp.herokuapp.com/" class="icon-link" target="_blank">
-                      view in browser
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                    <a href="http://www.github.com/nataliesmyth/dog-collector" class="icon-link" target="_blank">
-                      GitHub
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                    
-                    
-                    
-                    
-                    <img class="img-fluid img-thumbnail" src="./images/click-game-fullscreen.png" alt="">
-                    <div class="feature-icon bg-primary bg-gradient">
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
-                    </div>
-                    <h4>Click Game</h4>
-                    <p>Click game built with HTML, CSS, and JavaScript.</p>
-                    <a href="https://nataliesmyth.github.io/fuzzy-octo-memory/" class="icon-link" target="_blank">
-                      view in browser
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                    <a href="https://github.com/nataliesmyth/fuzzy-octo-memory" class="icon-link" target="_blank">
-                      GitHub
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                    
-                    
-                    
-                    <img class="img-fluid img-thumbnail" src="./images/tama-fullscreen.png" alt="">
-                    <div class="feature-icon bg-primary bg-gradient">
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
-                    </div>
-                    <h4>Tamagotchi</h4>
-                    <p>Take care of your pet until they reach adulthood, at 10 years old. Built with HTML, CSS, and JavaScript.</p>
-                    <a href="http://www.nataliesmyth.com/tamagotchi/" class="icon-link" target="_blank">
-                      view in browser
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                    <a href="https://github.com/nataliesmyth/tamagotchi/" class="icon-link" target="_blank">
-                      GitHub
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                    
-                    
-                    
-                    <img class="img-fluid img-thumbnail" src="./images/react-todo.png" alt="">
-                    <div class="feature-icon bg-primary bg-gradient">
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
-                    </div>
-                    <h4>Task App</h4>
-                    <p>Full-stack task application built with React</p>
-                    <a href="https://ns-react-todo.herokuapp.com/todos" class="icon-link" target="_blank">
-                      view in browser
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                    <a href="https://nataliesmyth.github.io/ns-react-todo" class="icon-link" target="_blank">
-                      GitHub
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                    
-                    
-                    
-                    
-                  </div>
-                  
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    
-                    
-                  </div>
+                <div class="col">
+                  <h5>Implementation:</h5>
+                  <ul>
+                    <li>Reliable frameworks including</li>
+                    <li>Rails</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>Django</li>
+                  </ul>
                 </div>
               </div>
-            </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <!-- <div class="container px-4 py-5 mt-4" id="YES">
-              <h2 class="pb-2 text-center border-bottom">YES! (Your Empowered Sexuality)</h2>
-              <p class="mx-4"  style="">Co Founder and Director of Web Development</p>
-            </div>  -->
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <div class="container col-xxl-8 px-4 py-5" id="contact">
-              <div class="row d-flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                  
-                  <div class="col-lg my-5">
-                    <h2>Contact</h2>
-                    <p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                      </svg>
-                      973.699.3254
-                    </p>
-                    <p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                      </svg>
-                      <a href="www.github.com/nataliesmyth" target="_blank">GitHub</a>
-                    </p>
-                    <p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                      </svg>
-                      <a href="https://www.linkedin.com/in/nataliesmyth11/" target="_blank">LinkedIn</a>
-                    </p>
-                    <p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-                      </svg>
-                      Nataliesmyth11@gmail.com
-                    </p>
-                    
-                    
-                  </div>
+              <div class="row">
+                <div class="col">
+                  <h5>Collaboration:</h5>
+                  <ul>
+                    <li>Git</li>
+                    <li>Github</li>
+                  </ul>
                 </div>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-              </main>
-              
-              
-              
-              <div class="col-lg-6">
-                
-                
-                
+                <div class="col">
+                  <h5>Interactivity:</h5>
+                  <ul>
+                    <li>Ruby</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Python</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+
+      <!-- ************** PROJECTS ************** -->
+
+
+
+      <div class="tab-pane" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+        <div class="container col-xxl-8 px-4 py-5" id="projects">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="./images/portfolio-woman.png" class="d-block mx-lg-auto img-fluid" alt="cartoon-me">
+
+
+            </div>
+
+            <div class="col-lg-6">
+              <!-- <h1 class="display-5 fw-bold lh-1 mb-3">About Me</h1> -->
+              <h2>Projects</h2>
+              <div class="feature col">
+                <img class="img-fluid img-thumbnail" src="./images/dog-collector-photo.png" alt="">
+                <div class="feature-icon bg-primary bg-gradient">
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#people-circle"></use>
+                  </svg>
+                </div>
+                <h4>Dog Collector App</h4>
+                <p>Full-stack reference application built with Django.</p>
+                <a href="https://dogcollectorapp.herokuapp.com/" class="icon-link" target="_blank">
+                  view in browser
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+                <a href="http://www.github.com/nataliesmyth/dog-collector" class="icon-link" target="_blank">
+                  GitHub
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+
+
+
+
+                <img class="img-fluid img-thumbnail" src="./images/click-game-fullscreen.png" alt="">
+                <div class="feature-icon bg-primary bg-gradient">
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#people-circle"></use>
+                  </svg>
+                </div>
+                <h4>Click Game</h4>
+                <p>Click game built with HTML, CSS, and JavaScript.</p>
+                <a href="https://nataliesmyth.github.io/fuzzy-octo-memory/" class="icon-link" target="_blank">
+                  view in browser
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+                <a href="https://github.com/nataliesmyth/fuzzy-octo-memory" class="icon-link" target="_blank">
+                  GitHub
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+
+
+
+                <img class="img-fluid img-thumbnail" src="./images/tama-fullscreen.png" alt="">
+                <div class="feature-icon bg-primary bg-gradient">
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#people-circle"></use>
+                  </svg>
+                </div>
+                <h4>Tamagotchi</h4>
+                <p>Take care of your pet until they reach adulthood, at 10 years old. Built with HTML, CSS, and
+                  JavaScript.</p>
+                <a href="http://www.nataliesmyth.com/tamagotchi/" class="icon-link" target="_blank">
+                  view in browser
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+                <a href="https://github.com/nataliesmyth/tamagotchi/" class="icon-link" target="_blank">
+                  GitHub
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+
+
+
+                <img class="img-fluid img-thumbnail" src="./images/react-todo.png" alt="">
+                <div class="feature-icon bg-primary bg-gradient">
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#people-circle"></use>
+                  </svg>
+                </div>
+                <h4>Task App</h4>
+                <p>Full-stack task application built with React</p>
+                <a href="https://ns-react-todo.herokuapp.com/todos" class="icon-link" target="_blank">
+                  view in browser
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+                <a href="https://nataliesmyth.github.io/ns-react-todo" class="icon-link" target="_blank">
+                  GitHub
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+
+
+
+
               </div>
             </div>
           </div>
-          
+        </div>
+      </div>
 
 
-          <section id="contact">
-            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
-              <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
-            </svg>
-            <div class="container flex">
-              <div class="header waypoint animated slide-in-left" data-animation="slide-in-left">
-                CONTACT
+
+      <!-- ************** CONTACT ************** -->
+
+      <div class="tab-pane" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <div class="container col-xxl-8 px-4 py-5" id="contact">
+          <div class="row d-flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+
+              <div class="col-lg my-5">
+                <h2>Contact</h2>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                  </svg>
+                  973.699.3254
+                </p>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                  <a href="www.github.com/nataliesmyth" target="_blank">GitHub</a>
+                </p>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg>
+                  <a href="https://www.linkedin.com/in/nataliesmyth11/" target="_blank">LinkedIn</a>
+                </p>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                  </svg>
+                  Nataliesmyth11@gmail.com
+                </p>
+
+
               </div>
-              <div class="header-bar waypoint animated slide-in-right" data-animation="slide-in-right" data-delay=".25s" style="animation-delay: 0.25s;"></div>
-              <div class="highlight waypoint animated slide-in-right" data-animation="slide-in-right" data-delay=".5s" style="animation-delay: 0.5s;">
-                Have a question or want to work together?
-              </div>
-              <form class="waypoint animated pop-in" data-animation="pop-in" data-delay=".5s" id="contact-form" style="animation-delay: 0.5s;">
-                <input placeholder="Name" type="text" name="name" required="">
-                <input placeholder="Enter email" type="email" name="email" required="">
-                <textarea placeholder="Your Message" type="text" name="message"></textarea>
-                <div id="success">
-                  <div>
-                    Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
-                  </div>
-                </div>
-                <input class="button" type="submit" id="submit" value="SUBMIT">
-              </form>
             </div>
-          </section>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+<!-- ************** FOOTER ************** -->
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="text-center">
+    <span class="text-muted">&copy; Natalie Smyth 2021</span>
+  </div>
+</footer>
+
+<!-- ************** SCRIPTS ************** -->
 
 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
 
-
-          
-          <footer class="footer mt-auto py-3 bg-light">
-            <div class="text-center">
-              <span class="text-muted">&copy; Natalie Smyth 2021</span>
-            </div>
-          </footer>
-          
-          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-          <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/jquery.waypoints.js" integrity="sha512-kAKC+JNXXE28EycATN2UdxoTwR/5B4GpZnGPkzc7Z0QXGnH+BbFuhYDM7/va6ouR0NfGydfVN2alYnyfU/UCgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>         -->
-          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-          <script src="./js/notify.min.js"></script>
-          <script src="./js/app.js"></script>
-        </body>
-
-        </html>
+</html>
