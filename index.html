@@ -15,49 +15,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbarScroll">
+  <body>
     
     <header>
-      
 
-      
-      <div id="navbarScroll">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Natalie Smyth</a>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+              
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#">Home</a>
+              </li>
 
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-          <div class="container-fluid" >
-            <a class="navbar-brand" href="#">Natalie Smyth</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- <div class="collapse navbar-collapse" id="navbarScroll"> -->
-              <ul class="nav justify-content-end" style="--bs-scroll-height: 100px;">
-                <li class="nav-item">
-                  <a class="nav-link link-dark" data-bs-toggle="collape" role="button" href="#">Home</a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#about" data-talking="About">About</a>
+              </li>
 
-                <div class="collapse" id="collapseExample">
-                  <div class="card card-body">
-                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                  </div>
-                </div>
-                
-                <li class="nav-item">
-                  <a class="nav-link link-dark" href="#about" role="button" data-bs-toggle="collape">About</a>
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link link-dark" href="#workflow" data-talking="Here's how I do it">Workflow</a>
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link link-dark" href="#projects">Projects</a>
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link link-dark" href="#contact">Contact</a>
-                </li>
-                
-                
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#workflow" data-talking="Here's how I do it">Workflow</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#projects">Projects</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#contact">Contact</a>
+              </li>
+              
+              </ul>
+              </div>
+              
                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -65,16 +58,18 @@
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
-              
+
               
             </ul>
             
-          </nav>
-          
-        </div>
-      </header>
+      </nav>
+      
+</header>
       
       <main>
+
+        
+      
         
         <div class="container vh-100 col-xxl-8 px-4 py-5">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
