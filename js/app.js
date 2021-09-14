@@ -1,10 +1,10 @@
-// console.log('sanity check')
+console.log('sanity check')
 
 
-var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-  target: '#navbarScroll'
-})
-
+var firstTabEl = document.querySelector('#myTab li:last-child button')
+var firstTab = new bootstrap.Tab(firstTabEl)
+        
+firstTab.show()
 
 // var waypoint = new Waypoint({
 //   element: document.getElementById('context-example'),
