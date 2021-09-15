@@ -1,17 +1,11 @@
-// console.log('sanity check')
+console.log('sanity check')
 
 
-var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-  target: '#navbarScroll'
-})
+var firstTabEl = document.querySelector('#myTab li:last-child button')
+var firstTab = new bootstrap.Tab(firstTabEl)
+        
+firstTab.show()
 
-
-// var waypoint = new Waypoint({
-//   element: document.getElementById('context-example'),
-//   handler: function() {
-//     notify('Basic waypoint triggered')
-//   }
-// })
 
 let readout = document.querySelector('.readout');
 
@@ -27,11 +21,4 @@ setInterval(e => {
 
 
 
-
-
-
-
-
-
-// console.log(waypoint.element);
 
