@@ -1,3 +1,20 @@
+$color-blue: #83af9b;
+$color-green: #c8c8a9;
+$color-brown: #774f38;
+$color-beige: #ece5ce;
+$color-yellow: #f9cdad;
+$color-pink: #fe4365;
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font: 2vw system-ui;
+  background-color: $color-yellow;
+}
+
+
 // Source mixins
 
 // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -11,11 +28,11 @@
 
 // Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
 .cartoon-me {
-  display: fixed;
+  display: none;
 }
 @include media-breakpoint-down(md) {
   .cartoon-me {
-    display: none;
+    display: block
   }
 }
 
