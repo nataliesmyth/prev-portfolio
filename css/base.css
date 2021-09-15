@@ -14,31 +14,6 @@ p {
   font-family: OpenSans, Helvetica, Arial;
 }
 
-.waypoint {
-  width: 50%;
-  height: 300px;
-  display: flex;
-}
-
-.waypoint p {
-  text-align: center;
-}
-
-nav {
-  z-index: 2;
-}
-
-nav::before {
-  content: "";
-  /* width: 583px; */
-  /* height: 646px; */
-  background: url(../images/natalie-smyth-cartoon.png) no-repeat right;;
-  /* background-size: auto; */
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-}
   
   @media (min-width: 992px) {
     .rounded-lg-3 { border-radius: .3rem; }
