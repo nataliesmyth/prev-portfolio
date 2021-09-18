@@ -9,6 +9,16 @@ body {
   position: relative;
 }
 
+/* nav::before {
+  content: "";
+  width: 583px;
+  height: 346px;
+  background-image: url(../images/natalie-smyth-cartoon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 200px;
+} */
 
 p {
   font-family: OpenSans, Helvetica, Arial;
