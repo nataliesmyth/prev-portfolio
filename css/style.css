@@ -1,221 +1,360 @@
+/*****Color & Font Key
+black-color: #343338;
+white: #FFFFFF;
+off-white: #CDD5D1;
+off-purple: #6F7184;
+rose: #D8C0B8;
+
+font-family: 'Poppins', sans-serif;
+***************/
+
+/*****Global*****/
 * {
-    box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+h3 {
+	font-size: 1.35em;
 }
 
-/* main {
-    position: relative;
-    background-image: url(./../images/portfolio-woman.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 50% 50% contain;
-    top: 94px; 
-} */
-
-
-h1 {
-    font-family: 'Source Sans Pro', sans-serif;
+p {
+	font-size: 1.25em;
 }
 
-li a {
-    color: #CF1332;
+.page {
+	min-height: 100vh;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-nav {
-    z-index: 2;
-    font-style: normal;
-    font-weight: normal;
-    letter-spacing: 1px;
-    /* text-transform: uppercase; */
-    /* background-color: #e3f2fd; */
+.navbar-inverse {
+	background-color: #343338;
+	border-color: #343338;
 }
 
-
-
-nav::after {
-    content: "";
-    width: 583px;
-    height: 646px;
-    background-image: url(../images/natalie-smyth-cartoon.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    position: relative;
-    top: 200px;
-    left: 1000px;
+.collapsed-navbar {
+	background-color: #343338;
+	color: #FFFFFF;
+	font-size: 1.15em;
+	font-family: 'Poppins', sans-serif;
+	height: 9.5%;
 }
 
-#home, #about, #contact {
-    z-index: 0;
+.site-navbar {
+	position: fixed;
+	background-color: #343338;
+	min-width: 100vw;
 }
 
-#home {
-    margin-top: 400px;
-    height: 80vh;
+.site-navbar ul li a {
+	color: #FFFFFF;
+	font-size: 1.35em;
+	font-family: 'Poppins', sans-serif;
+	margin-top: 6px;
 }
 
-.text {
-    width: 10em;
+/*****Home Page*****/
+#hero-img {
+	min-width: 100vw;
+	height: 100vh;
+	width: 100vw;
 }
 
-.fixed-img {
-    position: fixed;
-}
-/***** BOOTSTRAP CLASSES *****/
-
-.mb-1 {
-    margin-bottom: 6.25rem!important;
-}
-
-.p-1 {
-    padding: 12.25rem!important;
+#box {
+	width: 50%;
+	height: 30%;
+	padding-top: 1.5%;
+	border: 0.01em solid #ffffff;
+	position: absolute;
+	margin-top: 35vh;
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
 }
 
-
-.pl-2 {
-    padding-left: 12.25rem!
-  }
-
-.text-block {
-    z-index: 2;
+#name-heading {
+	font-family: 'Poppins', sans-serif;
+	font-weight: lighter;
 }
 
-.readout {
-    /* color: #ddd; */
-    font-size:  1rem;
-    margin-top: 1em;
-    /* position: relative; */
-    top: 2em;
-    /* text-align: center; */
-  }
-
-.readout b {
-    text-align: left;
+/*****About Page*****/
+#about-page {
+	background-color: #D8C0B8;
+	height: auto;
+	width: 100vw;
+	font-size: 1.3em;
 }
 
-#home p {
-    margin-left: 24.5em;
-    font-size: 1rem;
+#about-me-blurb {
+	visibility: hidden;
+	margin-top: 32vh;
+	color: #343338;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
 }
 
-/***** SCROLLING TEXT *****/
+/*****Work Flow Page*****/
 
-  
-  p {
-    /* float: left; */
-    margin-bottom: 0%;
-    font-family: OpenSans, Helvetica, Arial;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: normal;
-    letter-spacing: 1px;
-    line-height: 32px;
-    text-transform: none;
-    color: #5D656C;
-  }
-
-
-.hero {
-    position: relative;
-    width: 40vw;
-    height: 67vh;
-    top: 11em;
+#work-flow-page {
+	background-color: #343338;
 }
 
-.hero-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 1em;
-    text-align: center;
-    /* position: relative; */
-    top: 2em;
+.all-steps {
+	visibility: hidden;
 }
 
-.hero-text {
-    /* position: relative; */
-    text-align: left;
-    /* left: 30em; */
+.work-flow-text {
+	visibility: hidden;
+	text-align: center;
+	height: 100vh;
+	background-color: #ffffff;
+	color: #343338;
+	width: 50vw;
 }
 
-.hero-subtitle {
-    font-size: 2rem;
-    font-weight: 200;
-    margin-top: 1rem;
+.work-flow-text h3, p {
+	margin-top: 40vh;
+	font-family: 'Poppins', sans-serif;
 }
 
-.hero-button {
-    background-color: #879199;
-    color: #f3f3f3;
-    border: 1px solid #d1d5d8;
-    margin-top: 5rem;
-    padding: 0.9375rem 1.875rem;
-    font-family: "Monserrat", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 200;
-    cursor: pointer;
-    position: absolute;
+.work-flow-text p {
+	margin: 0 auto;
 }
 
-.hero-button:hover {
-    background-color: #d1d5d8;
-    border: 1px solid #454c51;
+/*Row Class*/
+.work-flow-snippets {
+	height: 45%;
+	width: 100%;
 }
 
-#about, #projects, #contact {
-    position: relative;
-    z-index: 2;
+.steps {
+	min-width: 50%;
+	height: 50vh;
+	text-align: center;
+	color: #ffffff;
 }
 
-.cartoon-me {
-    position: relative;
-    z-index: 1;
-}
-/***** NAV *****/
-
-.nav-list {
-    justify-content: flex-end;
+#step-one {
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
 }
 
-.nav-item {
-    font-size: 1.3em;
-    padding: 0 20px 0 20px;
+#step-two {
+	border-bottom: 1px solid #fff;
 }
 
-.nav-item a {
-    color: #454c51;
+#step-four {
+	border-right: 1px solid #fff;
 }
 
 
-/***** CONTACT *****/
+.steps h3 {
+	margin-top: 30%;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	margin-left: 18px;
+}
 
-#contact {
-    width: 60vw;
-    line-height: 2.5;
+.steps ul li {
+	list-style: none;
+	font-family: 'Poppins', sans-serif;
+	margin-left: -1.5em;
+	font-size: 1.15em;
+}
+
+/*****Work Page*****/
+#work-page {
+	background-color: #FFFFFF;
+	height: 100vh;
+}
+
+.work-text h3, p {
+	margin-top: 22vh;
+	font-family: 'Poppins', sans-serif;
+	color: #343338;
+}
+
+.work-text a {
+	text-decoration: none;
+	color: #343338;
+}
+
+.work-text a:hover {
+	color: #E8C0B8;
+	text-decoration: none;
+}
+
+.work-text p span {
+	font-weight: bolder;
+	font-size: 1.1em;
 }
 
 
-/***** FOOTER *****/
-
-footer {
-    width: 100vw;
-    /* padding: 2% 5%; */
-    text-align: center;
+#a-few-short-miles {
+	visibility: hidden;
+	margin-top: 2%;
+	width: 48%;
+	margin-right: 2%;
 }
 
-@media screen and (max-width: 992px) {
-    nav::after {
-        display: none;
-    }
+#within-reach {
+	visibility: hidden;
+	margin-top: 2%;
+	width: 48%;
+	margin-left: 2%;
+}
 
-    .img-fluid{
-        position: relative;
-    }
+#the-best-hour {
+	visibility: hidden;
+	margin-top: -2%;
+	width: 48%;
+	margin-right: 2%;
+}
 
-    .p-1 {
-        padding: 0rem;
-    }
-  }
+/*Preview Div Class*/
+.preview {
+	margin-top: 25vh;
+	width: 100%;
+	height: 100%;
+}
+
+/*Preview Image Class*/
+.img-preview {
+	width: 100%;
+	height: 320px;
+}
+
+#few-short-miles-preview {
+	visibility: hidden;
+}
+
+#within-reach-preview {
+	visibility: hidden;
+	margin-left: 2%;
+}
+
+#best-hour-preview {
+	visibility: hidden;
+	margin-top: -10vh;
+}
+
+
+/*****Contact Page*****/
+#contact-page {
+	background-color: #343338;
+	width: 100vw;
+}
+
+.contact-text {
+	margin-top: 10%;
+	color: #ffffff;
+}
+
+#contact-text h3 {
+	font-family: 'Poppins', sans-serif;
+}
+
+#contact-page p {
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+}
+
+#resume {
+	text-decoration: none;
+	color: #fff;
+}
+
+#resume:hover {
+	color: #E8C0B8;
+}
+
+.icon-container {
+	display: inline-block;
+	margin-top: 7%;
+	text-align: center;
+}
+
+.icon {
+	width: 15%;
+	padding: 0.5em;
+}
+
+#copyright {
+	text-align: center;
+	color: #ffffff;
+	margin-top: 12%;
+	font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 200px) and (max-width: 1125px) {
+/*****Home Page*****/
+
+	#box {
+		width: 60%;
+		margin: 25% 20%;
+		border: none;
+	}
+
+/*****About Page*****/
+
+	#about-me-blurb {
+		text-align: center;
+		margin-top: 35%;
+		font-size: 0.85em;
+	}
+/*****Work Flow Page*****/
+
+	.work-flow-text {
+		height: 10%;
+		background-color: #343338;
+	}
+
+	#my-workflow-text {
+		color: #ffffff;
+		text-align: center;
+	}
+
+	#my-workflow-heading {
+		color: #D8C0B8;
+		text-align: center;
+	}
+
+	.work-flow-text h3, p {
+		margin-top: 20%;
+	}
+
+	.steps h3 {
+		color: #D8C0B8;
+	}
+
+	.steps {
+		margin-top: -100px;
+		height: auto;
+	}
+
+	#step-one {
+		border: none;
+
+	}
+
+	#step-two {
+		border: none;
+	}
+
+	#step-four {
+		border: none;
+	}
+
+/*****Work Page*****/
+
+	.img-preview {
+		width: 100%;
+		height: auto;
+	}
+
+	#a-few-short-miles, #within-reach, #the-best-hour {
+		width: 80%;
+		margin-left: 10%;
+	}
+}
