@@ -30,7 +30,7 @@ body {
 .cartoon-me {
   display: none;
 }
-@include media-breakpoint-down(md) {
+@include media-breakpoint-up(md) {
   .cartoon-me {
     display: block
   }
