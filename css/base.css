@@ -9,6 +9,10 @@ body {
   position: relative;
 }
 
+nav {
+  background-color: #FF4F50;
+}
+
 /* nav::before {
   content: "";
   width: 583px;
