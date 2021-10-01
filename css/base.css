@@ -11,9 +11,10 @@ body {
 
 nav {
   background-color: #FF4F50;
+  height: 86px;
 }
 
-/* nav::before {
+nav::after {
   content: "";
   width: 583px;
   height: 346px;
@@ -21,8 +22,9 @@ nav {
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  top: 200px;
-} */
+  top: 300px;
+  right: 150px;
+}
 
 p {
   font-family: OpenSans, Helvetica, Arial;
