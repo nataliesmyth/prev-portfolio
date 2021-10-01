@@ -33,3 +33,11 @@ p {
     .rounded-lg-3 { border-radius: .3rem; }
   }
   
+  @media (max-width: 414px) {
+    .cartoon-me { display: none; }
+    .welcome-card { margin-top: 2.5em; }
+    .
+  }
+  
+
+
