@@ -9,6 +9,10 @@ body {
   position: relative;
 }
 
+.home-page {
+  height: 79vh;
+}
+
 nav {
   background-color: #FF4F50;
   height: 86px;
@@ -36,10 +40,10 @@ p {
   }
   
   @media (max-width: 414px) {
-    .cartoon-me { display: none; }
+    /* .cartoon-me { display: none; } */
     .welcome-card { margin-top: 2.5em; }
-    .
   }
   
-
-
+  @media (max-width: 575.98px) { 
+    .nav::after { content: none; }
+   }
