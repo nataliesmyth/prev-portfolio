@@ -37,6 +37,10 @@
 
 /* General styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -436,4 +440,12 @@ header {
 
 .social-list__link {
     padding: .5em;
+}
+
+/* Individual portfolio items */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
 }
