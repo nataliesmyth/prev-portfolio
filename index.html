@@ -1,3 +1,9 @@
+<!-- Introduction -->
+<!-- 
+    KEY
+    __ : component of or subsection to
+    -- : modifier class, so it will modefy the section title so it's a little different from the default title
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,29 +28,22 @@
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
-
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">link</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">link</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">link</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">link</a></li>
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Introduction -->
-    <!-- 
-        KEY
-        __ : component of or subsection to
-        -- : modifier class, so it will modefy the section title so it's a little different from the default title
-     -->
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
             Hi, I am <strong>Natalie Smyth</strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-        <img src="./images/natalie.jpg" alt="A picture of Natalie Smyth smiling">
+        <img src="./images/natalie.jpg" alt="A picture of Natalie Smyth smiling" class="intro__img">
     </section>
 
     <!-- My Services -->
