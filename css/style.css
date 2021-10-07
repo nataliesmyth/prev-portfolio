@@ -38,10 +38,10 @@
 /* General styles */
 
 /* endable this to add smooth scrolling */
-/* html {
-    scroll-behavior: smooth;
-} */
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background: var(--clr-light);
@@ -242,8 +242,8 @@ header {
     right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.hamburger::before { top: 9px; }
+.hamburger::after { bottom: 9px; }
 
 
 /*  Intro section  */
