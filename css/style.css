@@ -37,9 +37,11 @@
 
 /* General styles */
 
-html {
+/* endable this to add smooth scrolling */
+/* html {
     scroll-behavior: smooth;
-}
+} */
+
 
 body {
     background: var(--clr-light);
@@ -141,6 +143,7 @@ header {
 
 .logo {
     max-width: 100px;
+    font-weight: var(--fw-bold);
 }
 
 .nav {
@@ -179,8 +182,6 @@ header {
     color: var(--clr-accent);
 }
 
-/* Hamburger */
-
 .nav-toggle {
     padding: .5em;
     background: transparent;
@@ -212,11 +213,12 @@ header {
     opacity: 0;
 }
 
+
+
+
+
+
 .hamburger {
-    background: var(--clr-dark);
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
     display: block;
     position: relative;
 }
@@ -224,12 +226,25 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
+
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
+
 
 /*  Intro section  */
 
@@ -275,10 +290,13 @@ header {
     }
 }
 
-/* My services section */
+
+
+/*  My services section  */
 
 .my-services {
     background-color: var(--clr-dark);
+    background-image: url(../img/services-bg.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
@@ -318,9 +336,10 @@ header {
     }
     
     .service + .service {
-        margin-left: 2em
+        margin-left: 2em;
     }
 }
+
 
 .about-me {
     max-width: 1000px;
@@ -378,10 +397,11 @@ header {
 
 .portfolio__item {
     background: var(--clr-accent);
+    overflow: hidden;
 }
 
 .portfolio__img {
-    transition:
+    transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
 }
@@ -396,6 +416,7 @@ header {
     transform: scale(1.2);
     opacity: .5;
 }
+
 
 /* footer */
 
@@ -442,10 +463,17 @@ header {
     padding: .5em;
 }
 
-/* Individual portfolio items */
+
+/* Individual portfolio item styles */
 
 .portfolio-item-individual {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -1,5 +1,7 @@
+console.log('sanity check');
+
 const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav__links')
+const navLinks = document.querySelectorAll('.nav__link')
 
 navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
@@ -7,6 +9,6 @@ navToggle.addEventListener('click', () => {
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open')
+        document.body.classList.remove('nav-open');
     })
 })
