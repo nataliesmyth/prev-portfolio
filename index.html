@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Natalie Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <!-- <img src="images/images/cartoon-me-no-background.png" alt=""> -->
+                <a href="#">NS</a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Natalie Smyth</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <img src="images/natalie.jpg" alt="a picture of Natalie Smyth smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>I specialize in creating websites for small businesses, non-profits, and individuals. No one should have to settle for cheap solutions or generic templates. I provide fast, responsive, intuitive, and dynamic websites at affordable prices.</p>
+                </div> 
+                
+                <div class="service">
+                    <h3>Search Engine Optimization</h3>
+                    <p>Good content is good for nothing if people can't find you. Since almost 93% of web traffic occurs on search engines, it is vital for your website to be ranked highly on search engines to increase traffic and organic growth. </p>
+                </div>
+                
+                <!-- <div class="service">
+                    <h3>WordPress</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div> -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Designer & developer based out of the New York City metropolitan area.</p>
+           
+           <div class="about-me__body">
+               <p>Full stack web-developer, software engineer, and dancer who is driven by empathy and a desire to leave things better than I found them. Welcome!</p>
+               <p>My path to becoming a software engineer started in 2015, when I co-founded the organization <a href="https://www.yestoconsent.org/">YES! Your Empowered Sexuality</a>. My goal is to build programs that make a positive difference in people’s lives, and I always strive to find elegant and creative solutions to the task at hand.</p>
+           </div>
+           
+           <img src="images/ns-brownhair-hat.png" alt="Natalie wearing a brown hat" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="http://www.nataliesmyth.com/tamagotchi/" class="portfolio__item" target="_blank">
+                    <img src="images/tama-egg.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="https://dogcollectorapp.herokuapp.com/" class="portfolio__item" target="_blank">
+                    <img src="images/dog-collector-square" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="http://www.nataliesmyth.com/fuzzy-octo-memory/" class="portfolio__item" target="_blank">
+                    <img src="images/pp-click-game.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="https://www.yestoconsent.org/" class="portfolio__item pp-yes" target="_blank">
+                    <img src="images/pp-yes.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="https://ns-react-todo.herokuapp.com/todos" class="portfolio__item" target="_blank">
+                    <img src="images/react-todo-pp.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <!--<a href="portfolio-item.html" class="portfolio__item" target="_blank">
+                    <img src="images/natalie.jpg" alt="" class="portfolio__img">
+                </a>
+                -->
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:nataliesmyth11@gmail.com" class="footer__link">nataliesmyth11@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io/nataliesmyth" target="_blank">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/nataliesmyth11/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/nataliesmyth" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/app.js"></script>
+        
+    </body>
+</html>
