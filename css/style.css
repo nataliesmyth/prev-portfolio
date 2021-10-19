@@ -56,6 +56,10 @@ section {
     padding: 5em 2em;
 }
 
+section .intro {
+    padding: 3em 2em;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -417,6 +421,36 @@ header {
     opacity: .5;
 }
 
+.project-page-links {
+    color: var(--clr-dark);
+    margin: 0 auto;
+}
+
+.project-links {
+    margin: 0 2em 0 3em;
+    text-align: left;
+}
+ul {
+    list-style-type: none;
+}
+
+.test-button {
+    display: none;
+}
+a button {
+    display: none;
+}
+a button:hover {
+    display: block;
+}
+
+/* a:hover {
+    color: green;
+    text-decoration: underline overline;
+  } */
+.test-button:hover {
+    display: block;
+}
 .pp-tama {
     opacity: 1;
 }
