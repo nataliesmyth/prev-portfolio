@@ -146,8 +146,13 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 200px;
     font-weight: var(--fw-bold);
+}
+
+.logo a {
+    color: var(--clr-dark);
+    text-decoration: none;
 }
 
 .nav {
