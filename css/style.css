@@ -53,7 +53,7 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 3em 2em;
 }
 
 section .intro {
@@ -266,7 +266,7 @@ header {
 }
 
 .section__subtitle--intro {
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 @media (min-width: 600px) {
