@@ -150,6 +150,9 @@ header {
     font-weight: var(--fw-bold);
 }
 
+.logo a {
+    color: var(--clr-dark);
+}
 .nav {
     position: fixed;
     background: var(--clr-dark);
