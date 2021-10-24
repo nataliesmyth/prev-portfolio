@@ -428,12 +428,13 @@ header {
 
 .project-page-links {
     color: var(--clr-dark);
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .project-links {
-    margin: 0 2em 0 3em;
-    text-align: left;
+    display: inline-block;
+    /* margin: 0 2em 0 3em; */
+    /* text-align: left; */
 }
 ul {
     list-style-type: none;
@@ -462,6 +463,12 @@ a button:hover {
 
 .pp-yes {
     padding: 2em .5em 0em .5em
+}
+
+.pp-click {
+    /* margin-bottom: 5em; */
+    position: relative;
+    bottom: 1.25em;
 }
 
 /* footer */
