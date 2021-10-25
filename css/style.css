@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
+/* Custom Properties */
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -37,8 +37,6 @@
 
 /* General styles */
 
-/* endable this to add smooth scrolling */
-
 html {
     scroll-behavior: smooth;
 }
@@ -61,7 +59,7 @@ section .intro {
 }
 
 img {
-    display: block;
+    /* display: block; */
     max-width: 100%;
 }
 
@@ -221,11 +219,6 @@ header {
 .nav-open .hamburger::after {
     opacity: 0;
 }
-
-
-
-
-
 
 .hamburger {
     display: block;
@@ -463,6 +456,11 @@ a button:hover {
 
 .pp-yes {
     padding: 2em .5em 0em .5em
+}
+
+.pp-yes-logo {
+    min-width: 20em;
+
 }
 
 .pp-click {
