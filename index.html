@@ -1,468 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natalie Smyth | Software Engineer</title>
-  <link rel="stylesheet" href="./css/base.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,800&display=swap" rel="stylesheet">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-</head>
-
-<body>
-
-  <!-- ************** NAV BAR ************** -->
-  <header>
-
-    <nav class="navbar navbar-expand-lg fixed-top">
-
-      <div class="container-fluid opacity-75">
-
-        <a class="navbar-brand link-dark fw-bold" href="#home">NS</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Natalie Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
-        <ul class="nav nav-tabs d-flex flex-row-reverse" id="myTab" role="tablist">
-          
-          <li class="nav-item" role="presentation">
-            <button class="nav-link link-dark" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
-            role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-          </li>
-          
-          <li class="nav-item" role="presentation">
-            <button class="nav-link link-dark" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button"
-            role="tab" aria-controls="projects" aria-selected="false">Projects</button>
-          </li>
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
 
-          <li class="nav-item" role="presentation">
-            <button class="nav-link link-dark" id="workflow-tab" data-bs-toggle="tab" data-bs-target="#workflow" type="button"
-            role="tab" aria-controls="workflow" aria-selected="false">Workflow</button>
-          </li>
-
-          <li class="nav-item" role="presentation">
-            <button class="nav-link link-dark" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab"
-            aria-controls="about" aria-selected="false">About</button>
-          </li>
-          
-          <li class="nav-item" role="presentation">
-            <button class="nav-link link-dark active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-            role="tab" aria-controls="home" aria-selected="true">Home</button>
-          </li>
-          
-          
-        </ul>
-        </div>
-      </div>
-    </nav>
-
-  </header>
-
-  <main>
-
-
-
-  <!-- ************** TAB CONTENT ************** -->
-  <div class="tab-content">
-
-  <!-- ************** HOME ************** -->
-            
-      <div class="tab-pane fade show active home-page" id="home" role="tabpanel" aria-labelledby="home-tab">
-        <div class="container">
-          <h1 class="display-2 fw-bold welcome-card align-items-end mt-5 pt-5">Hey, Hi, Hello!</h1>
-          
-          <h1 class="display-4">I'm Natalie.</h1>
-          <h6>I am a <span class="readout"></span></h6>
-        </div>
-      </div>
-    
-    
-    <!-- ************** ABOUT ************** -->
-    
-    
-    <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
-      
-      <div class="container" id="about">
-        <div class="row flex-lg-row-reverse py-5 align-items-end welcome-placement">
-          <div class="col-10 col-sm-8 col-lg-4">
-            
-          </div>
-          
-          <div class="col-lg-8">
-            <!-- <h1 class="display-5 fw-bold lh-1 mb-3">About Me</h1> -->
-            <h2 class="mt-5 pt-5">About Me</h2>
-            <p class="lead">Full stack web-developer, software engineer, and dancer who is driven by empathy and a desire to leave things better than I found them. Welcome!</p>
-               <p>My path to becoming a software engineer started in 2015, when I co-founded the organization <a href="www.yestoconsent.org">YES! Your Empowered Sexuality</a>. My goal is to build programs that make a positive difference in people’s lives, and I always strive to find elegant and creative solutions to the task at hand.</p>
-              
-              <a href="https://docs.google.com/document/d/e/2PACX-1vSfgedfrgRoeg-5dkhAx8NdS8Vo5cSSt6vtBLdWSOyLp3zpuoCIpNUEEKE33KXbaI31McBTpfCCDLTL/pub"
-              target="_blank">Resume</a>
-              
-              
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                
-              </div>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <!-- <img src="images/images/cartoon-me-no-background.png" alt=""> -->
+                <a href="#">Natalie Smyth</a>
             </div>
-          </div>
-        </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
         
-      </div>
-      
-      
-      
-      <!-- ************** WORKFLOW ************** -->
-      
-      
-      
-      <div class="tab-pane fade" id="workflow" role="tabpanel" aria-labelledby="workflow-tab">
-        <div class="container" id="workflow">
-          <div class="row py-5 align-items-end welcome-placement">
-            
-            <!-- <div class="col-10 col-sm-8 col-lg-4">
-              <img src="./images/portfolio-woman.png" class="mx-lg-auto img-fluid img-fixed cartoon-me"
-              alt="cartoon-me">
-            </div> -->
-            <!-- <div class="col-10 col-sm-8 col-lg-6">
-              <div class="expanded row all-steps">
-                <div class="col-xs-12 steps" id="step-one">
-                  
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hey, Hi, Hello! <strong>I'm Natalie</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <img src="images/natalie.jpg" alt="a picture of Natalie Smyth smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>I specialize in creating websites for small businesses, non-profits, and individuals. No one should have to settle for cheap solutions or generic templates. I provide fast, responsive, intuitive, and dynamic websites at affordable prices.</p>
+                </div> 
+                
+                <div class="service">
+                    <h3>Search Engine Optimization</h3>
+                    <p>Good content is good for nothing if people can't find you. Since almost 93% of web traffic occurs on search engines, it is vital for your website to be ranked highly on search engines to increase traffic and organic growth. </p>
                 </div>
-                <div class="col-xs-12 steps" id="step-two">
-                  
+                
+                <!-- <div class="service">
+                    <h3>WordPress</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-              </div>
-              <div class="expanded row all-steps">
-                <div class="col-xs-12 steps" id="step-four">
-                  
-                </div>
-                <div class="col-xs-12 steps" id="step-three">
-                  
-                </div>
-              </div>
             </div> -->
             
-            <div class="col-lg-8">
-              <h2 class="mt-5 pt-5">My Workflow</h2>
-              <p>I've adopted a work flow that prioritizes planning and communication. I take big ideas and
-                implement them in small, manageable steps.</p>
-                
-                <div class="row">
-                  <div class="col">
-                    <h5>Planning:</h5>
-                    <ul>
-                      <li>User Stories
-                        <li>Trello</li>
-                        <li>Wire frames</li>
-                        <li>Entity Relationship Diagram (ERD)</li>
-                      </ul>
-                    </div>
-                    <div class="col">
-                      <h5>Implementation:</h5>
-                      <ul>
-                        <li>Reliable frameworks including</li>
-                        <li>Rails</li>
-                        <li>Node</li>
-                        <li>Express</li>
-                        <li>Django</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <h5>Collaboration:</h5>
-                      <ul>
-                        <li>Git</li>
-                        <li>Github</li>
-                      </ul>
-                    </div>
-                    <div class="col">
-                      <h5>Interactivity:</h5>
-                      <ul>
-                        <li>Ruby</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>Python</li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                </div>
-                
-                
-          </div>
-        </div>
-      </div>
-          
-          
-          
-          
-          <!-- ************** PROJECTS ************** -->
-          
-          <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
-            <div class="container" id="projects">
-              <div class="row py-5 align-items-end welcome-placement">
-                <!-- <div class="col col-lg-4">
-                  <img src="./images/portfolio-woman.png" class="mx-lg-auto img-fluid cartoon-me" alt="cartoon-icon">
-                  
-                  
-                </div> -->
-                
-                
-                <div class="col-lg-8">
-                  <!-- <div class=""> -->
-                    <h2 class="mt-5 pt-5">Projects</h2>
-                  <div class="row">
-                    <div class="col-8">
-                      <img class="img-fluid" src="./images/dog-collector-photo.png" alt="cartoon-icon">
-                    <div class="feature-icon bg-primary bg-gradient">
-                      <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#people-circle"></use>
-                      </svg>
-                    </div>
-                    <h4>Dog Collector App</h4>
-                    <p>Full-stack reference application built with Django.</p>
-                    <a href="https://dogcollectorapp.herokuapp.com/" class="icon-link" target="_blank">
-                      view in browser
-                      <svg class="bi" width="    1em" height="1em">
-                        <use xlink:href="#chevron-right"></use>
-                      </svg>
-                    </a>
-                    <a href="http://www.github.com/nataliesmyth/dog-collector" class="icon-link" target="_blank">
-                      GitHub
-                      <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#chevron-right"></use>
-                      </svg>
-                    </a>
-                    </div>
-                    <div class="col-6">
-                      <img class="img-fluid img-thumbnail" src="./images/click-game-fullscreen.png" alt="">
-                    <div class="feature-icon bg-primary bg-gradient">
-                      <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#people-circle"></use>
-                      </svg>
-                    </div>
-                    <h4>Click Game</h4>
-                    <p>Click game built with HTML, CSS, and JavaScript.</p>
-                    <a href="https://nataliesmyth.github.io/fuzzy-octo-memory/" class="icon-link" target="_blank">
-                      view in browser
-                      <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#chevron-right"></use>
-                      </svg>
-                    </a>
-                    <a href="https://github.com/nataliesmyth/fuzzy-octo-memory" class="icon-link" target="_blank">
-                      GitHub
-                      <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#chevron-right"></use>
-                      </svg>
-                    </a>
-                    </div>
-                
-                    <!-- Force next columns to break to new line -->
-                    <div class="w-100"></div>
-                
-                    <div class="col-6">
-                      <img class="img-fluid img-thumbnail" src="./images/tama-fullscreen.png" alt="">
-                    <div class="feature-icon bg-primary bg-gradient">
-                      <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#people-circle"></use>
-                      </svg>
-                    </div>
-                    <h4>Tamagotchi</h4>
-                    <p>Take care of your pet until they reach adulthood, at 10 years old. Built with HTML, CSS, and
-                      JavaScript.</p>
-                      <a href="http://www.nataliesmyth.com/tamagotchi/" class="icon-link" target="_blank">
-                        view in browser
-                        <svg class="bi" width="1em" height="1em">
-                          <use xlink:href="#chevron-right"></use>
-                        </svg>
-                      </a>
-                      <a href="https://github.com/nataliesmyth/tamagotchi/" class="icon-link" target="_blank">
-                        GitHub
-                        <svg class="bi" width="1em" height="1em">
-                          <use xlink:href="#chevron-right"></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="col-6">
-                      <img class="img-fluid img-thumbnail" src="./images/react-todo.png" alt="">
-                      <div class="feature-icon bg-primary bg-gradient">
-                        <svg class="bi" width="1em" height="1em">
-                          <use xlink:href="#people-circle"></use>
-                        </svg>
-                      </div>
-                      <h4>Task App</h4>
-                      <p>Full-stack task application built with React</p>
-                      <a href="https://ns-react-todo.herokuapp.com/todos" class="icon-link" target="_blank">
-                        view in browser
-                        <svg class="bi" width="1em" height="1em">
-                          <use xlink:href="#chevron-right"></use>
-                        </svg>
-                      </a>
-                      <a href="https://nataliesmyth.github.io/ns-react-todo" class="icon-link" target="_blank">
-                        GitHub
-                        <svg class="bi" width="1em" height="1em">
-                          <use xlink:href="#chevron-right"></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-             
-                    
-                    
-     
-                      
-                      
-                    </div> 
-                  </div>
-                </div>
-              
+            <!-- <a href="#work" class="btn">My Work</a> -->
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Designer & developer based out of the New York City metropolitan area.</p>
+           
+           <div class="about-me__body">
+               <p>Full stack web-developer, software engineer, and dancer who is driven by empathy and a desire to leave things better than I found them. Welcome!</p>
+               <p>My path to becoming a software engineer started in 2015, when I co-founded the organization <a href="https://www.yestoconsent.org/" target="_blank">YES! Your Empowered Sexuality</a>. My goal is to build programs that make a positive difference in people’s lives, and I always strive to find elegant and creative solutions to the task at hand.</p>
+           </div>
+           
+           <img src="images/ns-brownhair-hat.png" alt="Natalie wearing a brown hat" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
             
-         
-            
-            
-            
-            <!-- ************** CONTACT ************** -->
-            
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-      
-              <div class="container" id="contact">
-                <div class="row py-5 align-items-end welcome-placement">
-                  <!-- <div class="col-10 col-sm-8 col-lg-4">
-                    <img src="./images/portfolio-woman.png" class=" mx-lg-auto img-fluid img-fixed cartoon-me"
-                    alt="cartoon-me">
-                  </div> -->
-                  
-                  <div class="col-lg-8">
-                    
-                    <h2 class="mt-5 pt-5">Contact</h2>
-                    <p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd"
-                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                    </svg>
-                    973.699.3254
-                  </p>
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="./portfolio-projects/tama-project.html" class="portfolio__item">
+                    <img src="images/tama-egg.png" alt="" class="portfolio__img">
+                </a>
 
-                  <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-github" viewBox="0 0 16 16">
-                    <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                  </svg>
-                  <a href="www.github.com/nataliesmyth" target="_blank">GitHub</a>
-                </p>
-                <p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-linkedin" viewBox="0 0 16 16">
-                  <path
-                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                </svg>
-                <a href="https://www.linkedin.com/in/nataliesmyth11/" target="_blank">LinkedIn</a>
-              </p>
-              <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                <path
-                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
-              </svg>
-              Nataliesmyth11@gmail.com
-            </p>
-                      
-                      <a href="https://docs.google.com/document/d/e/2PACX-1vSfgedfrgRoeg-5dkhAx8NdS8Vo5cSSt6vtBLdWSOyLp3zpuoCIpNUEEKE33KXbaI31McBTpfCCDLTL/pub"
-                      target="_blank">Resume</a>
-                      
-                      
-                      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 
-              </div>
-        <!-- <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-              <div class="container vh-100 col-xxl-8 px-4 py-5" id="contact">
-                <div class="row flex-lg-row-reverse g-5 py-5">
-                  <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="./images/portfolio-woman.png" class="d-block mx-lg-auto img-fluid" alt="cartoon-me">
-                    
-                    
-                  </div>
-                  
-                  <div class="col-lg-6">
-                    <h2>Contact</h2>
-                 
-                  
-            
+                <!-- Portfolio item 02 -->
+                <a href="./portfolio-projects/dog-collector-project.html" class="portfolio__item">
+                    <img src="images/dog-collector-square.png" alt="" class="portfolio__img">
+                    <button>button</button>
+                    <button>button</button>
+                </a>
+                
 
 
-              </div>
+                <!-- Portfolio item 03 -->
+                <a href="./portfolio-projects/click-game-project.html" class="portfolio__item">
+                    <img src="./images/pp-click.png" alt="" class="portfolio__img">
+                    <button>button</button>
+                    <button>button</button>
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="./portfolio-projects/yes.html" class="portfolio__item pp-yes">
+                    <img src="images/pp-yes.jpg" alt="" class="portfolio__img">
+                    <button>button</button>
+                    <button>button</button>
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="/portfolio-projects/todo-project.html" class="portfolio__item">
+                    <img src="images/react-todo-pp.png" alt="" class="portfolio__img">
+                    <button>button</button>
+                    <button>button</button>
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <!--<a href="portfolio-item.html" class="portfolio__item">
+                    <img src="images/natalie.jpg" alt="" class="portfolio__img">
+                </a>
+                -->
             </div>
-          </div>
-        </div> -->
-      </div>
-
-    
-    
-  </main>
-
-  <!-- ************** FOOTER ************** -->
-  <!-- <footer class="footer mt-auto py-3 bg-light">
-      <div class="container">
-        <span class="text-muted">
-
-          <ul class="nav justify-content-center border-bottom pb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">YES!</a></li>
-            <li class="nav-item"><a href="https://docs.google.com/document/d/e/2PACX-1vSfgedfrgRoeg-5dkhAx8NdS8Vo5cSSt6vtBLdWSOyLp3zpuoCIpNUEEKE33KXbaI31McBTpfCCDLTL/pub" class="nav-link px-2 text-muted"
-              target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-              </svg></a></li>
-              
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-              </svg></a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-              </svg></a></li>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:nataliesmyth11@gmail.com" class="footer__link">nataliesmyth11@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io/nataliesmyth" target="_blank">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/nataliesmyth11/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/nataliesmyth" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
             </ul>
             <p class="text-center text-muted">© 2021 Natalie Smyth</p>
           </span>
   </div>
-  </footer> -->
-
-  <footer class="footer mt-auto bg-light fixed-bottom">
-    <div class="container-fluid">
-      <span class="text-muted">
-
-        <ul class="nav justify-content-center border-bottom">
-          <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">YES!</a></li> -->
-          <li class="nav-item"><a href="https://twitter.com/itsbirdyperch" class="nav-link px-2 text-muted"
-            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-            </svg></a></li>
-            
-            <li class="nav-item"><a href="https://github.com/nataliesmyth" class="nav-link px-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-            </svg></a></li>
-            <li class="nav-item"><a href="https://www.linkedin.com/in/nataliesmyth11/" class="nav-link px-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-            </svg></a></li>
-          </ul>
-          <p class="text-center py-2 text-muted">© 2021 Natalie Smyth</p>
-        </span>
-    </div>
   </footer>
+
+
 
 
 <!-- ************** SCRIPTS ************** -->
