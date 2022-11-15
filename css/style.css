@@ -24,6 +24,10 @@
     
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+    --minh: 98vh;
+    --color1: wheat;
+    --color2: midnightblue;
 }
 
 @media (min-width: 800px) {
@@ -69,6 +73,20 @@ strong { font-weight: var(--fw-bold) }
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
+
+/* Draw the Curtain */
+
+.curtain {
+    /** create the "split" background **/
+    background-image: linear-gradient(to bottom, var(--color2) 50%, var(--color1) 50%);
+  }
+  
+  /** add extra space to the bottom (need this for the "sticky" effect) **/
+  .curtain::after {
+    content: "";
+    display: block;
+    min-height: var(--minh);
+  }
 
 /* Buttons */
 
@@ -403,6 +421,7 @@ header {
 }
 
 .portfolio__img {
+    object-fit: cover;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
