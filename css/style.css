@@ -1,14 +1,21 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+/*** BASE RESET ***/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*** BOX SIZE & FONT SIZE ***/
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
 
 /* Custom Properties */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Poppins', monospace;
     
     --fw-reg: 300;
     --fw-bold: 900;
@@ -39,7 +46,7 @@
     }
 }
 
-/* General styles */
+/*** GENERAL STYLES ***/
 
 html {
     scroll-behavior: smooth;
